@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Balkara';
+  src: url(../fonts/BalkaraFreeCondensed.ttf);
+}
+@font-face {
+  font-family: 'Onest_regular';
+  src: url(../fonts/Onest-Regular.ttf);
+}
+@font-face {
+  font-family: 'Onest_medium';
+  src: url(../fonts/Onest-Medium.ttf);
+}
+@font-face {
+  font-family: 'Onest_semibold';
+  src: url(../fonts/Onest-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'Onest_bold';
+  src: url(../fonts/Onest-Bold.ttf);
+}
+@font-face {
+  font-family: 'Onest_extrabold';
+  src: url(../fonts/Onest-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Onest_black';
+  src: url(../fonts/Onest-Black.ttf);
+}
