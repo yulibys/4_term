@@ -1,0 +1,407 @@
+.aboutPage {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffbef;
+  overflow-x: hidden;
+}
+.aboutPage .pageBackground2 {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background2.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+.aboutContent {
+  position: relative;
+  z-index: 2;
+}
+.aboutTitle {
+  position: relative;
+  z-index: 2;
+  margin: 3vw 0 2vw 0;
+  text-align: center;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 4.44vw;
+  line-height: 1;
+}
+.aboutBookSection {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 1vw;
+  padding-bottom: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookBlock {
+  position: relative;
+  width: 64vw;
+  height: 41vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 160vw;
+}
+.bookCover {
+  height: 41vw;
+  max-width: 32vw;
+  object-fit: contain;
+  display: none;
+  pointer-events: none;
+}
+.bookCover.active {
+  display: block;
+}
+.bookPages {
+  position: relative;
+  display: none;
+  width: 64vw;
+  height: 41vw;
+  justify-content: center;
+  gap: 0;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+.bookPages.active {
+  display: flex;
+}
+.bookPageImg {
+  width: 32vw;
+  height: 41vw;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+.bookControls {
+  position: relative;
+  z-index: 100;
+  margin-top: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  pointer-events: auto;
+}
+.turnPage {
+  position: absolute;
+  top: 0;
+  width: 32vw;
+  height: 41vw;
+  object-fit: cover;
+  z-index: 40;
+  display: none;
+  pointer-events: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.turnPage.turnNext {
+  display: block;
+  right: 0;
+  transform-origin: left center;
+  animation: turnNextPage 0.9s ease-in-out forwards;
+}
+.turnPage.turnPrev {
+  display: block;
+  left: 0;
+  transform-origin: right center;
+  animation: turnPrevPage 0.9s ease-in-out forwards;
+}
+.bookArrow {
+  position: relative;
+  z-index: 101;
+  width: 3.8vw;
+  height: 3.8vw;
+  border-radius: 50%;
+  border: none;
+  background: #45301c;
+  color: #fffbef;
+  font-family: 'Onest_semibold';
+  font-size: 1.8vw;
+  cursor: pointer;
+}
+.bookArrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.aboutAgencyWrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 320vh;
+}
+.aboutAgencyScreen {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.agencyCards {
+  position: absolute;
+  left: 50%;
+  top: 11vw;
+  transform: translateX(-50%);
+  width: 60vw;
+  height: 24vw;
+}
+.agencyCard {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 0.7vw;
+  will-change: transform;
+}
+.agencyCardBig {
+  left: 50%;
+  top: -8vw;
+  transform: translateX(-50%);
+  width: 46.25vw;
+  height: 32.7vw;
+  z-index: 10;
+}
+.agencyCardSmall {
+  width: 22.5vw;
+  height: 15.97vw;
+  z-index: 5;
+}
+.agencyCardLeft {
+  left: 6vw;
+  top: 8vw;
+  transform: rotate(0deg);
+}
+.agencyCardRight {
+  right: 5vw;
+  top: -5vw;
+  transform: rotate(0deg);
+}
+.agencyTitle {
+  position: absolute;
+  left: 50%;
+  top: 39vw;
+  transform: translateX(-50%);
+  margin: 0;
+  width: 72vw;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 3.33vw;
+  line-height: 4.16vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.agencyButton {
+  position: absolute;
+  left: 50%;
+  top: 49vw;
+  transform: translateX(-50%);
+  width: 19.65vw;
+  height: 3.4vw;
+  border-radius: 6.94vw;
+  background: #45301c;
+  color: #fffbef;
+  font-family: 'Onest_semibold';
+  font-size: 1.38vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  transition: background 0.25s ease;
+}
+.agencyButton:hover {
+  background: #4c4136;
+}
+.aboutSearchWrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 320vh;
+}
+.aboutSearchScreen {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.aboutSearchTrack {
+  position: absolute;
+  left: 6vw;
+  top: 8vw;
+  display: flex;
+  gap: 1.66vw;
+  width: max-content;
+  will-change: transform;
+}
+.aboutSearchCard {
+  position: relative;
+  width: 16.6vw;
+  height: 23.3vw;
+  overflow: hidden;
+  border-radius: 0.7vw;
+  flex-shrink: 0;
+  cursor: default;
+}
+.aboutSearchCard img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.aboutSearchInfo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5.55vw;
+  background-image: url('../images/gradient1.png');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.25vw;
+  color: #fffbef;
+  font-family: 'Onest_semibold';
+  font-size: 1.38vw;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.aboutSearchCard:hover .aboutSearchInfo {
+  opacity: 1;
+}
+.aboutSearchTitle {
+  position: absolute;
+  left: 50%;
+  top: 40vw;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 4.44vw;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.aboutSearchSubtitle {
+  position: absolute;
+  left: 50%;
+  top: 47vw;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #000;
+  font-family: 'Onest_regular';
+  font-size: 1.66vw;
+  line-height: 2.08vw;
+  text-align: center;
+  white-space: nowrap;
+}
+.aboutAgentsWrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 320vh;
+}
+.aboutAgentsScreen {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.agentsCards {
+  position: absolute;
+  left: 50%;
+  top: 5vw;
+  width: 58vw;
+  height: 24vw;
+  transform: translateX(-50%);
+}
+.agentCard {
+  position: absolute;
+  width: 23vw;
+  height: 28vw;
+  overflow: hidden;
+  border-radius: 0.7vw;
+  will-change: transform;
+}
+.agentCard img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.agentName {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1.2vw;
+  background-image: url('../images/gradient1.png');
+  background-size: 100% 100%;
+  color: #fffbef;
+  font-family: 'Onest_semibold';
+  font-size: 1.38vw;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.agentCard:hover .agentName {
+  opacity: 1;
+}
+.agent1,
+.agent2,
+.agent3,
+.agent4 {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.agent1 {
+  z-index: 4;
+}
+.agent2 {
+  z-index: 3;
+}
+.agent3 {
+  z-index: 2;
+}
+.agent4 {
+  z-index: 1;
+}
+.agentsTitle {
+  position: absolute;
+  left: 50%;
+  top: 40vw;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 4.44vw;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.agentsSubtitle {
+  position: absolute;
+  left: 50%;
+  top: 46vw;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #000;
+  font-family: 'Onest_regular';
+  font-size: 1.66vw;
+  line-height: 2.08vw;
+  text-align: center;
+}

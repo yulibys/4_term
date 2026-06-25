@@ -1,0 +1,151 @@
+@keyframes turnNextPage {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateY(-105deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+}
+@keyframes turnPrevPage {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateY(105deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+}
+@keyframes ticketSlideOut {
+  0% {
+    transform: translateX(-38vw);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .aboutTitle {
+    margin-top: 22vw;
+    font-size: 14vw;
+  }
+
+  .aboutBookSection {
+    padding-bottom: 18vw;
+  }
+
+  .bookBlock {
+    width: 90vw;
+    height: 62vw;
+  }
+
+  .bookCover {
+    width: 76vw;
+    max-width: none;
+    height: auto;
+  }
+
+  .bookPages {
+    width: 90vw;
+    height: 58vw;
+  }
+
+  .bookPageImg {
+    width: 45vw;
+    height: 58vw;
+  }
+
+  .aboutAgencyScreen,
+  .aboutSearchScreen,
+  .aboutAgentsScreen {
+    padding-top: 14vw;
+    padding-bottom: 18vw;
+  }
+
+  .agencyCards {
+    height: 68vw;
+  }
+
+  .agencyCardBig {
+    width: 82vw;
+    height: 58vw;
+  }
+
+  .agencyCardSmall {
+    width: 42vw;
+    height: 30vw;
+  }
+
+  .agencyTitle {
+    font-size: 10vw;
+    line-height: 10.5vw;
+  }
+
+  .agencyButton {
+    width: 62vw;
+    height: 12vw;
+    font-size: 4.5vw;
+  }
+
+  .aboutSearchTrack {
+    width: max-content;
+    gap: 4vw;
+    padding: 0 6vw;
+  }
+
+  .aboutSearchCard {
+    width: 62vw !important;
+    min-width: 62vw !important;
+    height: 80vw !important;
+    transform: none !important;
+  }
+
+  .aboutSearchTitle {
+    font-size: 11vw;
+    line-height: 11vw;
+  }
+
+  .aboutSearchSubtitle {
+    font-size: 4.5vw;
+    line-height: 5.4vw;
+  }
+
+  .agentsCards {
+    width: max-content;
+    height: auto;
+    gap: 4vw;
+    padding: 0 6vw;
+  }
+
+  .agentCard {
+    width: 62vw !important;
+    min-width: 62vw !important;
+    height: 78vw !important;
+    transform: none !important;
+  }
+
+  .agentsTitle {
+    font-size: 11vw;
+    line-height: 11vw;
+  }
+
+  .agentsSubtitle {
+    font-size: 4.5vw;
+    line-height: 5.4vw;
+  }
+}

@@ -1,0 +1,145 @@
+.shopPage {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffbef;
+  overflow-x: hidden;
+}
+.shopPage .pageBackground2 {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background2.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+.shopContent {
+  position: relative;
+  z-index: 2;
+  width: 88.8vw;
+  margin: 0 auto;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+.shopHero {
+  width: 100%;
+}
+.shopTitle {
+  margin: 0;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 4.44vw;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.shopSubtitle {
+  margin: 1vw 0 5vw;
+  color: #000;
+  font-family: 'Onest_regular';
+  font-size: 1.38vw;
+  line-height: 1.7vw;
+  text-align: center;
+}
+.shopHeroGrid {
+  display: grid;
+  grid-template-columns: 34.72vw 16.67vw 34.72vw;
+  column-gap: 1.38vw;
+  align-items: start;
+  width: 100%;
+}
+.shopSection {
+  margin-top: 7vw;
+}
+.shopSectionFirst {
+  margin-top: 7vw;
+}
+.shopSection h2 {
+  margin: 0 0 2.5vw;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 4.44vw;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.shopRecommendedGrid,
+.shopFiveGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 16.67vw);
+  column-gap: 1.38vw;
+  row-gap: 5vw;
+  align-items: start;
+  width: 100%;
+}
+.shopCard,
+.shopCardLink {
+  width: 16.67vw;
+}
+.shopCard {
+  display: block;
+}
+.shopCardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.shopCard img {
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5vw;
+  transition: transform 0.3s ease;
+}
+.shopCardSquare img {
+  width: 16.67vw;
+  height: 14.86vw;
+}
+.shopCardTall img {
+  width: 16.67vw;
+  height: 21.94vw;
+}
+.shopCardWide,
+.shopWideLink {
+  width: 34.72vw;
+}
+.shopCardWide img {
+  width: 34.72vw;
+  height: 21.94vw;
+}
+.shopRecommendedGrid .shopWideLink,
+.shopFiveGrid .shopWideLink {
+  grid-column: span 2;
+}
+.shopHeroGrid .shopWideLink {
+  grid-column: auto;
+}
+.shopCard h3 {
+  margin: 0.8vw 0 0.25vw;
+  color: #000;
+  font-family: 'Onest_regular';
+  font-size: 1.66vw;
+  line-height: 1.8vw;
+  font-weight: 400;
+}
+.shopCard p {
+  margin: 0;
+  color: #000;
+  font-family: 'Onest_semibold';
+  font-size: 0.97vw;
+  line-height: 1.25vw;
+}
+.shopCardLink:hover .shopCard img {
+  transform: scale(1.02);
+}
+.shopSectionLast {
+  margin-bottom: 10vw;
+}
+.shopPage .footer {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}

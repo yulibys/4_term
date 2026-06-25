@@ -1,0 +1,172 @@
+.thingPage {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffbef;
+  overflow-x: hidden;
+}
+.thingPage .pageBackground2 {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background2.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+.thingContent {
+  position: relative;
+  z-index: 2;
+  width: 88.8vw;
+  margin: 0 auto;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+.thingHero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thingBack {
+  position: absolute;
+  top: 0;
+  left: 4vw;
+  color: #394923;
+  font-family: 'Onest_regular';
+  font-size: 5.5vw;
+  line-height: 1;
+  text-decoration: none;
+}
+.thingImageWrap {
+  width: 27vw;
+  height: 33vw;
+  margin-top: -8vw;
+}
+.thingImageWrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5vw;
+}
+.thingTitle {
+  margin-top: 3vw;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 4.44vw;
+  line-height: 0.9;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.thingText {
+  width: 50vw;
+  margin: 2vw 0 1.5vw;
+  color: #777;
+  font-family: 'Onest_regular';
+  font-size: 1.15vw;
+  line-height: 1.35vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.thingPrice {
+  margin: 0 0 1.2vw;
+  color: #777;
+  font-family: 'Onest_semibold';
+  font-size: 2vw;
+  line-height: 1;
+}
+.thingButton {
+  width: 19.65vw;
+  height: 3.4vw;
+  border-radius: 6.94vw;
+  background: #45301c;
+  color: #fffbef;
+  font-family: 'Onest_semibold';
+  font-size: 1.2vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thingRecommended {
+  margin-top: 7vw;
+}
+.thingRecommendedTitle {
+  margin: 0 0 2.5vw;
+  color: #394923;
+  font-family: 'Balkara';
+  font-size: 4.44vw;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.thingGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 16.67vw);
+  column-gap: 1.38vw;
+  row-gap: 5vw;
+  align-items: start;
+  width: 100%;
+}
+.thingCard,
+.thingCardLink {
+  width: 16.67vw;
+}
+.thingCardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.thingCard img {
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5vw;
+  transition: transform 0.3s ease;
+}
+.thingCardSquare img {
+  width: 16.67vw;
+  height: 14.86vw;
+}
+.thingCardTall img {
+  width: 16.67vw;
+  height: 21.94vw;
+}
+.thingCardWide,
+.thingWideLink {
+  width: 34.72vw;
+}
+.thingCardWide img {
+  width: 34.72vw;
+  height: 21.94vw;
+}
+.thingGrid .thingWideLink {
+  grid-column: span 2;
+}
+.thingCard h3 {
+  margin: 0.8vw 0 0.25vw;
+  color: #000;
+  font-family: 'Onest_regular';
+  font-size: 1.66vw;
+  line-height: 1.8vw;
+  font-weight: 400;
+}
+.thingCard p {
+  margin: 0;
+  color: #000;
+  font-family: 'Onest_semibold';
+  font-size: 0.97vw;
+  line-height: 1.25vw;
+}
+.thingCardLink:hover .thingCard img {
+  transform: scale(1.02);
+}
+.thingPage .footer {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}

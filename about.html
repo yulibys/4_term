@@ -5,20 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О нас</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/about.css" />
+    <link rel="icon" type="image/x-icon" href="images/Subtract.svg" />
+    <script defer src="javascripts/scripts.js"></script>
+    <script defer src="javascripts/about.js"></script>
   </head>
-  <body>
+  <body class="aboutPage">
+    <div class="pageBackground2"></div>
     <nav class="mainMenu">
-      <div class="menuLeft">
-        <a class="mainMenuLink" href="about.html">О нас</a>
-        <a class="mainMenuLink" href="events.html">События</a>
-        <a class="mainMenuLink" href="shop.html">Магазин</a>
-        <a class="mainMenuLink" href="blog.html">Блог</a>
-      </div>
-
       <a href="index.html">
         <img class="logo" src="images/logo.svg" alt="logo" />
       </a>
+      <button class="burgerBtn" id="burgerBtn" type="button">МЕНЮ</button>
     </nav>
-    <h1>Контакты</h1>
+    <div class="menuPopup" id="menuPopup">
+      <button class="menuPopupToggle" id="menuPopupToggle" type="button">
+        МЕНЮ
+      </button>
+      <div class="menuPopupLinks">
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="about.html">О НАС</a>
+        <a href="events.html">СОБЫТИЯ</a>
+        <a href="shop.html">МАГАЗИН</a>
+        <a
+          href="https://yulibys.github.io/3_term/"
+          target="_blank"
+          class="menuLinkExternal"
+        >
+          АНКЕТА
+        </a>
+      </div>
+    </div>
+    <main class="aboutContent">
+      <h1 class="aboutTitle">О нас</h1>
+      <section class="aboutBookSection">
+        <div class="bookBlock">
+          <img
+            class="bookCover active"
+            id="bookCover"
+            src="images/book-cover-front.png"
+            alt=""
+          />
+          <div class="bookPages" id="bookPages">
+            <img class="bookPageImg" id="bookLeftPage" src="" alt="" />
+            <img class="bookPageImg" id="bookRightPage" src="" alt="" />
+
+            <img class="turnPage" id="turnPage" src="" alt="" />
+          </div>
+        </div>
+        <div class="bookControls">
+          <button class="bookArrow" id="bookPrev" type="button">←</button>
+          <button class="bookArrow" id="bookNext" type="button">→</button>
+        </div>
+      </section>
+      <section class="aboutAgencyWrap">
+        <div class="aboutAgencyScreen">
+          <div class="agencyCards">
+            <img
+              class="agencyCard agencyCardSmall agencyCardLeft"
+              src="images/about-card1.png"
+              alt=""
+            />
+            <img
+              class="agencyCard agencyCardBig"
+              src="images/about-card2.png"
+              alt=""
+            />
+            <img
+              class="agencyCard agencyCardSmall agencyCardRight"
+              src="images/about-card3.png"
+              alt=""
+            />
+          </div>
+          <h2 class="agencyTitle">
+            Мы самое лучшее агентство<br />
+            знакомств в мифическом мире
+          </h2>
+          <a
+            href="https://yulibys.github.io/churme/"
+            target="_blank"
+            class="agencyButton"
+          >
+            Подробнее
+          </a>
+        </div>
+      </section>
+      <section class="aboutSearchWrap">
+        <div class="aboutSearchScreen">
+          <div class="aboutSearchTrack" id="aboutSearchTrack">
+            <div class="aboutSearchCard">
+              <img src="images/character1.png" alt="" />
+              <div class="aboutSearchInfo">Полудница, 350</div>
+            </div>
+            <div class="aboutSearchCard">
+              <img src="images/character2.png" alt="" />
+              <div class="aboutSearchInfo">Кикимора, 500</div>
+            </div>
+            <div class="aboutSearchCard">
+              <img src="images/character3.png" alt="" />
+              <div class="aboutSearchInfo">Леший, 1200</div>
+            </div>
+            <div class="aboutSearchCard">
+              <img src="images/character4.png" alt="" />
+              <div class="aboutSearchInfo">Водяной, 800</div>
+            </div>
+            <div class="aboutSearchCard">
+              <img src="images/character5.png" alt="" />
+              <div class="aboutSearchInfo">Баба Яга, 999</div>
+            </div>
+            <div class="aboutSearchCard">
+              <img src="images/character1.png" alt="" />
+              <div class="aboutSearchInfo">Полудница, 350</div>
+            </div>
+            <div class="aboutSearchCard">
+              <img src="images/character2.png" alt="" />
+              <div class="aboutSearchInfo">Кикимора, 500</div>
+            </div>
+          </div>
+          <h2 class="aboutSearchTitle">УДОБНЫЙ ПОИСК</h2>
+          <p class="aboutSearchSubtitle">
+            Самый удобный поиск благодаря умному подбору по мифологии<br />
+            и характеру персонажей
+          </p>
+        </div>
+      </section>
+      <section class="aboutAgentsWrap">
+        <div class="aboutAgentsScreen">
+          <div class="agentsCards">
+            <div class="agentCard agent1">
+              <img src="images/baba-yaga.png" alt="" />
+              <div class="agentName">Баба Яга</div>
+            </div>
+            <div class="agentCard agent2">
+              <img src="images/leshiy.png" alt="" />
+              <div class="agentName">Леший</div>
+            </div>
+            <div class="agentCard agent3">
+              <img src="images/kikimora.png" alt="" />
+              <div class="agentName">Кикимора</div>
+            </div>
+            <div class="agentCard agent4">
+              <img src="images/kosheyy.png" alt="" />
+              <div class="agentName">Кощей</div>
+            </div>
+          </div>
+          <h2 class="agentsTitle">ЛУЧШИЕ АГЕНТЫ</h2>
+          <p class="agentsSubtitle">
+            В нашем агентстве вы можете подобрать себе агента<br />
+            по вашим предпочтениям
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footerName" src="images/name.svg" alt="Чур меня!" />
+      <div class="footerLinks">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <span>Контакты</span>
+        <a href="shop.html">Магазин</a>
+        <a href="events.html">События</a>
+        <span>+7 (916) 677-78-89</span>
+      </div>
+      <img class="footerHome" src="images/home.svg" alt="" />
+    </footer>
   </body>
 </html>

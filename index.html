@@ -3,28 +3,204 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Агенство знакомств Чур меня!</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Агентство знакомств Чур меня!</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <link rel="icon" type="image/x-icon" href="../4_term/images/Subtract.svg" />
+    <link rel="icon" type="image/x-icon" href="images/Subtract.svg" />
     <script defer src="javascripts/scripts.js"></script>
     <script defer src="javascripts/index.js"></script>
   </head>
   <body>
-    <nav class="mainMenu">
-      <a href="index.html">
-        <img class="logo" src="images/logo.svg" alt="logo" />
-      </a>
-
-      <div class="menuLeft">
-        <a class="mainMenuLink" href="about.html">О нас</a>
-        <a class="mainMenuLink" href="events.html">События</a>
-        <a class="mainMenuLink" href="shop.html">Магазин</a>
-        <a class="mainMenuLink" href="blog.html">Блог</a>
+    <div class="screen1Wrap">
+      <section class="screen1">
+        <div class="pageBackground"></div>
+        <nav class="mainMenu">
+          <a href="index.html">
+            <img class="logo" src="images/logo.svg" alt="logo" />
+          </a>
+          <button class="burgerBtn" id="burgerBtn" type="button">МЕНЮ</button>
+        </nav>
+        <div class="menuPopup" id="menuPopup">
+          <button class="menuPopupToggle" id="menuPopupToggle" type="button">
+            МЕНЮ
+          </button>
+          <div class="menuPopupLinks">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="about.html">О НАС</a>
+            <a href="events.html">СОБЫТИЯ</a>
+            <a href="shop.html">МАГАЗИН</a>
+            <a
+              href="https://yulibys.github.io/3_term/"
+              target="_blank"
+              class="menuLinkExternal"
+            >
+              АНКЕТА
+            </a>
+          </div>
+        </div>
+        <div class="mainBlock">
+          <h1 class="text1">НАЙДИ</h1>
+          <h1 class="text2">СУДЬБУ</h1>
+        </div>
+        <div class="circleBlock">
+          <a href="about.html" class="button1">Подробнее</a>
+          <img class="rect1 circleCard" src="images/img1.png" alt="" />
+          <img class="rect2 circleCard" src="images/img2.png" alt="" />
+          <img class="rect3 circleCard" src="images/img3.png" alt="" />
+          <img class="rect4 circleCard" src="images/img4.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <section class="screen2">
+      <div class="pageBackground2"></div>
+      <div class="screen2Content1">
+        <img class="logo2" src="images/logo.svg" alt="logo" />
+        <h3 class="title1">
+          Создай себе анкету в одном<br />
+          из лучших агентств знакомств<br />
+          мифического мира
+        </h3>
+        <a
+          href="https://yulibys.github.io/3_term/"
+          target="_blank"
+          class="button1 button2"
+        >
+          Создать анкету
+        </a>
       </div>
-    </nav>
+      <div class="screen2Content2Wrap">
+        <div class="screen2Content2">
+          <div class="charactersBlock">
+            <div class="characterColumn columnDown">
+              <div class="characterCard">
+                <img src="images/character1.png" alt="" />
+                <div class="characterInfo">Полудница, 350</div>
+              </div>
+              <div class="characterCard">
+                <img src="images/character6.png" alt="" />
+                <div class="characterInfo">Домовой, 450</div>
+              </div>
+            </div>
+            <div class="characterColumn columnUp">
+              <div class="characterCard tallCard">
+                <img src="images/character2.png" alt="" />
+                <div class="characterInfo">Кикимора, 500</div>
+              </div>
+              <div class="characterCard">
+                <img src="images/character7.png" alt="" />
+                <div class="characterInfo">Берегиня, 777</div>
+              </div>
+            </div>
+            <div class="characterColumn columnDown">
+              <div class="characterCard">
+                <img src="images/character3.png" alt="" />
+                <div class="characterInfo">Леший, 1200</div>
+              </div>
+              <div class="characterCard tallCard">
+                <img src="images/character8.png" alt="" />
+                <div class="characterInfo">Мара, 1300</div>
+              </div>
+            </div>
+            <div class="characterColumn columnUp">
+              <div class="characterCard tallCard">
+                <img src="images/character4.png" alt="" />
+                <div class="characterInfo">Водяной, 800</div>
+              </div>
+              <div class="characterCard">
+                <img src="images/character9.png" alt="" />
+                <div class="characterInfo">Русалка, 600</div>
+              </div>
+            </div>
+            <div class="characterColumn columnDown">
+              <div class="characterCard">
+                <img src="images/character5.png" alt="" />
+                <div class="characterInfo">Баба Яга, 999</div>
+              </div>
+              <div class="characterCard">
+                <img src="images/character10.png" alt="" />
+                <div class="characterInfo">Вурдалак, 1100</div>
+              </div>
+            </div>
+          </div>
+          <h2 class="title2">ПРИСОЕДИНЯЙСЯ!</h2>
+          <h4 class="title3">Сотни нашедших свою судьбу</h4>
+          <a href="about.html" class="button3">Подробнее</a>
+        </div>
+      </div>
+      <div class="screen2Content3Wrap">
+        <div class="screen2Content3">
+          <div class="eventsTrack" id="eventsTrack">
+            <div class="eventCard eventDown">
+              <img src="images/event1.png" alt="" />
+              <div class="eventGradient"></div>
+              <div class="eventText">ФЕСТИВАЛЬ “НИТИ СУДЬБЫ”</div>
+            </div>
+            <div class="eventCard eventUp">
+              <img src="images/event2.png" alt="" />
+              <div class="eventGradient"></div>
+              <div class="eventText">МАСТЕР-КЛАСС “ВОЛШЕБНЫЕ ШАРЫ”</div>
+            </div>
+            <div class="eventCard eventDown">
+              <img src="images/event3.png" alt="" />
+              <div class="eventGradient"></div>
+              <div class="eventText">ПРОВЕРКА НА СОВМЕСТИМОСТЬ</div>
+            </div>
+            <div class="eventCard eventUp">
+              <img src="images/event1.png" alt="" />
+              <div class="eventGradient"></div>
+              <div class="eventText">ФЕСТИВАЛЬ “НИТИ СУДЬБЫ”</div>
+            </div>
+            <div class="eventCard eventDown">
+              <img src="images/event2.png" alt="" />
+              <div class="eventGradient"></div>
+              <div class="eventText">МАСТЕР-КЛАСС “ВОЛШЕБНЫЕ ШАРЫ”</div>
+            </div>
+            <div class="eventCard eventUp">
+              <img src="images/event3.png" alt="" />
+              <div class="eventGradient"></div>
+              <div class="eventText">ПРОВЕРКА НА СОВМЕСТИМОСТЬ</div>
+            </div>
+          </div>
+          <h2 class="title4">ЭКСКЛЮЗИВНЫЕ СОБЫТИЯ</h2>
+          <h4 class="title5">Самые необычные предложения участникам</h4>
+          <a href="events.html" class="button4">Подробнее</a>
+        </div>
+      </div>
+      <div class="screen2Content4Wrap">
+        <div class="screen2Content4">
+          <div class="productsBlock">
+            <div class="productCard productCardSmall productCardLeft">
+              <img src="images/product1.png" alt="" />
+              <div class="productGradient productGradientSmall"></div>
+              <div class="productText">ПЛЕТЕНЬ “МРАК СВЕТ”</div>
+            </div>
+            <div class="productCard productCardBig">
+              <img src="images/product2.png" alt="" />
+              <div class="productGradient productGradientBig"></div>
+              <div class="productText productTextBig">ХРУСТАЛЬНОЕ СЕРДЦЕ</div>
+            </div>
+            <div class="productCard productCardSmall productCardRight">
+              <img src="images/product3.png" alt="" />
+              <div class="productGradient productGradientSmall"></div>
+              <div class="productText">ВОЛШЕБНЫЙ КАМЕНЬ</div>
+            </div>
+          </div>
+          <h2 class="title6">ЛУЧШИЕ ТОВАРЫ</h2>
+          <h4 class="title7">Самые необычные товары участникам</h4>
+          <a href="shop.html" class="button5">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <img class="footerName" src="images/name.svg" alt="Чур меня!" />
+      <div class="footerLinks">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <span>Контакты</span>
+        <a href="shop.html">Магазин</a>
+        <a href="events.html">События</a>
+        <span>+7 (916) 677-78-89</span>
+      </div>
+      <img class="footerHome" src="images/home.svg" alt="" />
+    </footer>
   </body>
 </html>

@@ -3,22 +3,253 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>События</title>
+    <title>Магазин</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/shop.css" />
+    <link rel="icon" type="image/x-icon" href="images/Subtract.svg" />
+    <script defer src="javascripts/scripts.js"></script>
   </head>
-  <body>
+  <body class="shopPage">
+    <div class="pageBackground2"></div>
     <nav class="mainMenu">
-      <div class="menuLeft">
-        <a class="mainMenuLink" href="about.html">О нас</a>
-        <a class="mainMenuLink" href="events.html">События</a>
-        <a class="mainMenuLink" href="shop.html">Магазин</a>
-        <a class="mainMenuLink" href="blog.html">Блог</a>
-      </div>
-
       <a href="index.html">
         <img class="logo" src="images/logo.svg" alt="logo" />
       </a>
+      <button class="burgerBtn" id="burgerBtn" type="button">МЕНЮ</button>
     </nav>
-    <h1>Магазин</h1>
+    <div class="menuPopup" id="menuPopup">
+      <button class="menuPopupToggle" id="menuPopupToggle" type="button">
+        МЕНЮ
+      </button>
+      <div class="menuPopupLinks">
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="about.html">О НАС</a>
+        <a href="events.html">СОБЫТИЯ</a>
+        <a href="shop.html">МАГАЗИН</a>
+        <a
+          href="https://yulibys.github.io/3_term/"
+          target="_blank"
+          class="menuLinkExternal"
+          >АНКЕТА</a
+        >
+      </div>
+    </div>
+    <main class="shopContent">
+      <section class="shopHero">
+        <h1 class="shopTitle">Магазин</h1>
+        <p class="shopSubtitle">
+          Тут вы можете увидеть наши неволшебные товары
+        </p>
+        <div class="shopHeroGrid">
+          <a href="thing.html" class="shopCardLink shopWideLink">
+            <article class="shopCard shopCardWide">
+              <img src="images/shop1.png" alt="" />
+              <h3>Магический шар</h3>
+              <p>1290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop13.png" alt="" />
+              <h3>Любовное зелье</h3>
+              <p>1290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink shopWideLink">
+            <article class="shopCard shopCardWide">
+              <img src="images/shop24.png" alt="" />
+              <h3>Ступа</h3>
+              <p>690 ₽</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="shopSection shopSectionFirst">
+        <h2>Рекомендованное</h2>
+        <div class="shopRecommendedGrid">
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop25.png" alt="" />
+              <h3>Волшебная шляпа</h3>
+              <p>1890 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardTall">
+              <img src="images/shop23.png" alt="" />
+              <h3>Свеча для гадания</h3>
+              <p>290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop14.png" alt="" />
+              <h3>Зелье мудрости</h3>
+              <p>1490 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardTall">
+              <img src="images/shop16.png" alt="" />
+              <h3>Зелье вдохновения</h3>
+              <p>1090 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop20.png" alt="" />
+              <h3>Ледяная броня</h3>
+              <p>2490 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop13.png" alt="" />
+              <h3>Любовное зелье</h3>
+              <p>1290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink shopWideLink">
+            <article class="shopCard shopCardWide">
+              <img src="images/shop18.png" alt="" />
+              <h3>Грозовой удар</h3>
+              <p>3690 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop15.png" alt="" />
+              <h3>Зелье удачи</h3>
+              <p>1990 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardTall">
+              <img src="images/shop21.png" alt="" />
+              <h3>Теневой шаг</h3>
+              <p>4390 ₽</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="shopSection">
+        <h2>Зелья</h2>
+        <div class="shopFiveGrid">
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop13.png" alt="" />
+              <h3>Любовное зелье</h3>
+              <p>1290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop14.png" alt="" />
+              <h3>Зелье мудрости</h3>
+              <p>1490 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop15.png" alt="" />
+              <h3>Зелье удачи</h3>
+              <p>1990 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardTall">
+              <img src="images/shop16.png" alt="" />
+              <h3>Зелье вдохновения</h3>
+              <p>1090 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop17.png" alt="" />
+              <h3>Зелье защиты</h3>
+              <p>1290 ₽</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="shopSection">
+        <h2>Заклинания</h2>
+        <div class="shopFiveGrid">
+          <a href="404.html" class="shopCardLink shopWideLink">
+            <article class="shopCard shopCardWide">
+              <img src="images/shop18.png" alt="" />
+              <h3>Грозовой удар</h3>
+              <p>3690 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop19.png" alt="" />
+              <h3>Огненный шар</h3>
+              <p>2290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop20.png" alt="" />
+              <h3>Ледяная броня</h3>
+              <p>2490 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardTall">
+              <img src="images/shop21.png" alt="" />
+              <h3>Теневой шаг</h3>
+              <p>4390 ₽</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="shopSection shopSectionLast">
+        <h2>Утварь</h2>
+        <div class="shopFiveGrid">
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop22.png" alt="" />
+              <h3>Магический шар</h3>
+              <p>1290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardTall">
+              <img src="images/shop23.png" alt="" />
+              <h3>Свеча для гадания</h3>
+              <p>290 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink shopWideLink">
+            <article class="shopCard shopCardWide">
+              <img src="images/shop24.png" alt="" />
+              <h3>Ступа для трав</h3>
+              <p>690 ₽</p>
+            </article>
+          </a>
+          <a href="404.html" class="shopCardLink">
+            <article class="shopCard shopCardSquare">
+              <img src="images/shop25.png" alt="" />
+              <h3>Волшебная шляпа</h3>
+              <p>1890 ₽</p>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footerName" src="images/name.svg" alt="Чур меня!" />
+      <div class="footerLinks">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <span>Контакты</span>
+        <a href="shop.html">Магазин</a>
+        <a href="events.html">События</a>
+        <span>+7 (916) 677-78-89</span>
+      </div>
+      <img class="footerHome" src="images/home.svg" alt="" />
+    </footer>
   </body>
 </html>

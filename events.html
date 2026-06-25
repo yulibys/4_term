@@ -5,20 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>События</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/events.css" />
+    <link rel="icon" type="image/x-icon" href="images/Subtract.svg" />
+    <script defer src="javascripts/scripts.js"></script>
   </head>
-  <body>
+  <body class="eventsPage">
+    <div class="pageBackground2"></div>
     <nav class="mainMenu">
-      <div class="menuLeft">
-        <a class="mainMenuLink" href="about.html">О нас</a>
-        <a class="mainMenuLink" href="events.html">События</a>
-        <a class="mainMenuLink" href="shop.html">Магазин</a>
-        <a class="mainMenuLink" href="blog.html">Блог</a>
-      </div>
-
       <a href="index.html">
         <img class="logo" src="images/logo.svg" alt="logo" />
       </a>
+      <button class="burgerBtn" id="burgerBtn" type="button">МЕНЮ</button>
     </nav>
-    <h1>События</h1>
+    <div class="menuPopup" id="menuPopup">
+      <button class="menuPopupToggle" id="menuPopupToggle" type="button">
+        МЕНЮ
+      </button>
+      <div class="menuPopupLinks">
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="about.html">О НАС</a>
+        <a href="events.html">СОБЫТИЯ</a>
+        <a href="shop.html">МАГАЗИН</a>
+        <a
+          href="https://yulibys.github.io/3_term/"
+          target="_blank"
+          class="menuLinkExternal"
+          >АНКЕТА</a
+        >
+      </div>
+    </div>
+    <main class="eventsContent">
+      <section class="eventsHero">
+        <h1 class="eventsTitle">События</h1>
+        <p class="eventsSubtitle">
+          Тут вы можете увидеть наши актуальные (не)волшебные события
+        </p>
+        <div class="eventsHeroGrid">
+          <a href="event.html" class="eventsCardLink eventsWideLink">
+            <article class="eventsCard eventsCardWide">
+              <img src="images/ev1.png" alt="" />
+              <h3>Былины о любви</h3>
+              <p>Кино<br />6 июля в 19:00, Лукоморье Синема</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev2.png" alt="" />
+              <h3>Страшилки</h3>
+              <p>Кино<br />6 июля в 19:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink eventsWideLink">
+            <article class="eventsCard eventsCardWide">
+              <img src="images/ev3.png" alt="" />
+              <h3>Беседы по душам</h3>
+              <p>Фестиваль<br />12 июля в 17:00</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="eventsSection eventsSectionFirst">
+        <h2>Рекомендованное</h2>
+        <div class="eventsRecommendedGrid">
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev14.png" alt="" />
+              <h3>Ярмарка грибов</h3>
+              <p>Фестиваль<br />20 августа в 15:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardTall">
+              <img src="images/ev13.png" alt="" />
+              <h3>Фестиваль листьев</h3>
+              <p>Фестиваль<br />20 августа в 17:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev6.png" alt="" />
+              <h3>Судьбы</h3>
+              <p>Мастер-класс<br />22 августа в 14:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardTall">
+              <img src="images/ev21.png" alt="" />
+              <h3>Как приручить избушку</h3>
+              <p>Мастер-класс<br />29 декабря в 14:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev8.png" alt="" />
+              <h3>Гляделки в душу</h3>
+              <p>Кино<br />6 июля в 19:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev9.png" alt="" />
+              <h3>Девичник у Яги</h3>
+              <p>Кино<br />8 июля в 18:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink eventsWideLink">
+            <article class="eventsCard eventsCardWide">
+              <img src="images/ev3.png" alt="" />
+              <h3>Беседы по душам</h3>
+              <p>Кино<br />12 июля в 17:00, Лукоморье Синема</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev17.png" alt="" />
+              <h3>Лавка желудей</h3>
+              <p>Фестиваль<br />20 августа в 19:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardTall">
+              <img src="images/ev12.png" alt="" />
+              <h3>Обряды и тайны</h3>
+              <p>Фестиваль<br />16 июля в 18:00</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="eventsSection">
+        <h2>Фестивали</h2>
+        <div class="eventsFiveGrid">
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardTall">
+              <img src="images/ev13.png" alt="" />
+              <h3>Фестиваль листьев</h3>
+              <p>Фестиваль<br />20 августа в 17:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev14.png" alt="" />
+              <h3>Ярмарка грибов</h3>
+              <p>Фестиваль<br />20 августа в 15:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev15.png" alt="" />
+              <h3>Ивана Купала</h3>
+              <p>Фестиваль<br />7 июля в 20:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardTall">
+              <img src="images/ev16.png" alt="" />
+              <h3>Гадание под рождество</h3>
+              <p>Фестиваль<br />7 января в 23:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev17.png" alt="" />
+              <h3>Лавка желудей</h3>
+              <p>Фестиваль<br />20 августа в 19:00</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="eventsSection">
+        <h2>Мастер-классы</h2>
+        <div class="eventsFiveGrid">
+          <a href="404.html" class="eventsCardLink eventsWideLink">
+            <article class="eventsCard eventsCardWide">
+              <img src="images/ev18.png" alt="" />
+              <h3>Вяжем</h3>
+              <p>Мастер-класс<br />22 августа в 14:00, Дом Бабы Яги</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev22.png" alt="" />
+              <h3>Эликсир любви</h3>
+              <p>Мастер-класс<br />3 сентября в 12:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev6.png" alt="" />
+              <h3>Судьбы</h3>
+              <p>Мастер-класс<br />22 августа в 14:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardTall">
+              <img src="images/ev21.png" alt="" />
+              <h3>Как приручить вашу избушку</h3>
+              <p>Мастер-класс<br />29 декабря в 14:00</p>
+            </article>
+          </a>
+        </div>
+      </section>
+      <section class="eventsSection eventsSectionLast">
+        <h2>Кино</h2>
+        <div class="eventsFiveGrid">
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev2.png" alt="" />
+              <h3>Страшилки</h3>
+              <p>Кино<br />6 июля в 18:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardTall">
+              <img src="images/ev23.png" alt="" />
+              <h3>Тайный санта</h3>
+              <p>Кино<br />30 декабря в 19:00</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink eventsWideLink">
+            <article class="eventsCard eventsCardWide">
+              <img src="images/ev1.png" alt="" />
+              <h3>Былины о любви</h3>
+              <p>Кино<br />6 июля в 19:00, Лукоморье Синема</p>
+            </article>
+          </a>
+          <a href="404.html" class="eventsCardLink">
+            <article class="eventsCard eventsCardSquare">
+              <img src="images/ev25.png" alt="" />
+              <h3>Пикник у Лешего</h3>
+              <p>Кино<br />14 марта в 12:00</p>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footerName" src="images/name.svg" alt="Чур меня!" />
+      <div class="footerLinks">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <span>Контакты</span>
+        <a href="shop.html">Магазин</a>
+        <a href="events.html">События</a>
+        <span>+7 (916) 677-78-89</span>
+      </div>
+      <img class="footerHome" src="images/home.svg" alt="" />
+    </footer>
   </body>
 </html>
